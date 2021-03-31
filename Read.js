@@ -27,48 +27,46 @@ const PSUs = readline.createInterface({
 
 var count = 0;
 
-PSUs.on('line', (line)=>{
+// PSUs.on('line', (line)=>{
+//   array = line.split('\t')
+//   for(var i = 0; i < array.length; i++){
+//     if(i !== 4){
+//       array[i] = '"' + array[i]  + '"'
+//     }
+//   }
+//   str = array.join();
+//   fs.appendFile('./data/CLEANPSU.csv',count++ + ',' + str + '\n',(err)=>{
+//         if(err){
+//           console.log(err)
+//          }
+//        })
+// })
+
+AM4.on('line', (line)=>{
   array = line.split('\t')
-  for(var i = 0; i < array.length; i++){
-    if(i !== 4){
-      array[i] = '"' + array[i]  + '"'
+  array.splice(1,2)
+  str = array.join()
+  fs.appendFile('./data/CLEANCPU.csv', str+ ',AM4' + '\n',(err)=>{
+    if(err){
+      console.log(err)
     }
-  }
-  str = array.join();
-  fs.appendFile('./data/CLEANPSU.csv',count++ + ',' + str + '\n',(err)=>{
-        if(err){
-          console.log(err)
-         }
-       })
+  })
 })
 
-// AM4.on('line', (line)=>{
-//   array = line.split('\t')
-//   array.splice(1,2)
-//   array[0] = '"' + array[0] + '"'
-//   str = array.join()
-//   fs.appendFile('./data/CLEANCPU.csv',count++ + ',' + str+ ',"AM4"' + '\n',(err)=>{
-//     if(err){
-//       console.log(err)
-//     }
-//   })
-// })
+LGA1551.on('line', (line)=>{
+  array = line.split('\t')
+  array.splice(1,2)
+  if(array[4] === ' '){
+    array[4] = null
+  }
+  str = array.join()
+  fs.appendFile('./data/CLEANCPU.csv', str + ',1551'  + '\n',(err)=>{
+    if(err){
+      console.log(err)
+    }
+  })
 
-// LGA1551.on('line', (line)=>{
-//   array = line.split('\t')
-//   array.splice(1,2)
-//   array[0] = '"' + array[0] + '"'
-//   if(array[4] === ' '){
-//     array[4] = "null"
-//   }
-//   str = array.join()
-//   fs.appendFile('./data/CLEANCPU.csv',count++ + ',' + str + ',"1551"'  + '\n',(err)=>{
-//     if(err){
-//       console.log(err)
-//     }
-//   })
-
-// })
+})
 
 // MOB.on('line', (line)=>{
 //   array = line.split(',');
