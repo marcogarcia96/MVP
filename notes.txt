@@ -1,0 +1,7 @@
+PSU:
+ATX:  70 W
+EATX: 100 W
+MICRO: 60 W
+MINI: 30 W
+https://www.techpowerup.com/gpu-specs/?released=2021&sort=name gpu list
+Model, Core, threads, Frequency, turbo, L2 chache, L3 chache, Watt
