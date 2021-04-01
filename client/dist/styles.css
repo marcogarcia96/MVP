@@ -1,0 +1,195 @@
+
+
+/* body */
+.page{
+
+  margin: 0;
+}
+#tittle{
+  font-family: 'Heebo', sans-serif;
+display: inline-flex;
+position: relative;
+left: 10%;
+color:ivory
+}
+/* header */
+.head{
+  background: rgb(69, 107, 141);
+  width: 100%;
+  display: block;
+}
+.searchHeader{
+  left: 60%;
+  display: inline-flex;
+  position: relative;
+
+}
+.searchbar{
+  width: 300px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+
+}
+.searchbtn {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+.searchbtn:hover {
+  background: #0b7dda;
+}
+/* upper page body */
+.pagebody{
+  position: relative;
+  background: rgb(70, 71, 73);
+  border:1px solid black;
+  height: 245px;
+  border: none;
+  bottom:21px;
+}
+
+
+/* middle page body */
+.pagers{
+  margin: auto;
+  width: 33%;
+  padding: 30px;
+}
+
+.CPUBTN{
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  vertical-align: top;
+
+}
+
+.CPUBTN:hover{
+  cursor: pointer;
+  font-size: 18px;
+  transition: all ease-in-out 1s;
+}
+
+.GPUBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.GPUBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 1s;
+}
+.MOBBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.MOBBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 1s;
+}
+.HMEBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.HMEBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 1s;
+}
+.PSUBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.PSUBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 1s;
+}
+.RAMBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.RAMBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 1s;
+}
+.CASEBTN{
+  margin: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  outline:none;
+  font-family : inherit;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: top
+}
+.CASEBTN:hover{
+ cursor: pointer;
+ font-size: 18px;
+ transition: all ease-in-out 0.5s;
+}
+/* footer */
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgb(70, 71, 73);
+  border:1px solid black;
+  height: 100px;
+  border: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
