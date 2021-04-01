@@ -1,9 +1,14 @@
 import React from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
-import CPU from '/home/marco_ga/MVP/client/src/component/CPU.jsx'
-
+import axios from 'axios'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons';
+import CPU from '/home/marco_ga/MVP/client/src/component/CPU.jsx';
+import GPU from '/home/marco_ga/MVP/client/src/component/GPU.jsx';
+import MOB from '/home/marco_ga/MVP/client/src/component/MOB.jsx'
+import RAM from '/home/marco_ga/MVP/client/src/component/RAM.jsx'
+import CASE from '/home/marco_ga/MVP/client/src/component/CASE.jsx'
+import PSU from '/home/marco_ga/MVP/client/src/component/PSU.jsx'
 
 class App extends React.Component{
   constructor(){
@@ -14,10 +19,14 @@ class App extends React.Component{
     psu:{},
     ram:{},
     mob:{},
-   case:{}
+   case:{},
+   CPUS:[]
   }
+  this.Getcpus = this.Getcpus.bind(this);
 }
+  Getcpus= () => {
 
+  }
   render(){
     return (
     <div>
@@ -32,15 +41,20 @@ class App extends React.Component{
     </div>
      <div className="pagebody">
       <CPU />
+      <GPU />
+      <MOB/>
+      <RAM />
+      <CASE />
+      <PSU />
      </div>
      <div className='pagers'>
      <button className = 'CPUBTN' >Processors</button>
      <button className = 'GPUBTN' >Graphic Cards</button>
      <button className = 'MOBBTN' >Mother Boards</button>
      <button className = 'HMEBTN' >Home</button>
-     <button className = 'PSUBTN' >Power Supply</button>
      <button className = 'RAMBTN' >RAM</button>
      <button className = 'CASEBTN' >PC Cases</button>
+     <button className = 'PSUBTN' >Power Supply</button>
      </div>
      <div className="footer">
 

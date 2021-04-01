@@ -54,10 +54,100 @@ color:ivory
   border:1px solid black;
   height: 245px;
   border: none;
-  bottom:21px;
+
+}
+/* CPU Ap */
+.cpuimg{
+  height: 120px;
+  width: 100%;
+}
+.CPU{
+  position: relative;
+  left:10%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
+  top: 10px;
 }
 
+/* GPU */
+.GPU{
+  top:10px;
+  position: relative;
+  left:14%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
+}
+.gpuimg{
+  width: 100%;
+  height: 120px;
+}
+/* MOB */
+.MOB{
+  top:10px;
+  position: relative;
+  left:18%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
+}
+.mobimg{
+  width: 100%;
+  height: 120px;
+}
+/* RAM */
+  .RAM{
+    top:10px;
+  position: relative;
+  left:22%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
+  }
+  .ramimg{
+    width: 100%;
+    height: 120px;
+  }
+  /* CASE */
+  .CASE{
+    top:10px;
+  position: relative;
+  left:26%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
+  }
+  .caseimg{
+    width: 100%;
+    height: 120px;
+  }
+  /* PSU */
+  .PSU{
+    top:10px;
+  position: relative;
+  left:30%;
+  border: groove;
+  width: 200px;
+  height: 200px;
+  background: white;
+  display:inline-flex;
 
+  }
+  .psuimg{
+    width: 100%;
+    height: 120px;
+  }
 /* middle page body */
 .pagers{
   margin: auto;
